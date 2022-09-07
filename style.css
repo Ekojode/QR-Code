@@ -1,5 +1,9 @@
+html {
+    --bgcolor-blue-light: hsl(212, 45%, 89%);
+}
+
 body {
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--bgcolor-blue-light);
     font-family: "Outfit", sans-serif;
 }
 
@@ -14,6 +18,17 @@ main {
     /* display: flex;
     flex-direction: column; */
     justify-content: space-around;
+    transition: 0.25s ease-out;
+}
+
+.svg {
+    width: 2rem;
+    height: 2rem;
+    color: aquamarine;
+}
+
+main:hover {
+    transform: scale(1.05);
 }
 
 main img {
